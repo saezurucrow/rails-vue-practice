@@ -33,7 +33,15 @@ class Api::V1::EmployeesController < ApiController
     end
   end
 
+  def destroy
+    @employee.destroy!
+    head :no_content
+  end
+
   private
+    def set_employee
+      @employee = Employee.find(params[:id])
+    end
     def set_employee
       @employee = Employee.find(params[:id])
     end
