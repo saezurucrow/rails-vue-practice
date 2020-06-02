@@ -47,9 +47,10 @@
 export default {
   props: {
     employee: {},
-    errors: '',
-  },
-}
+    errors: ""
+  }
+};
 </script>
 
-<style></style>
+<style>
+</style>
